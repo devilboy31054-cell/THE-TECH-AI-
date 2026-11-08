@@ -225,7 +225,7 @@
     </main>
 
     <script>
-        // Data Configuration: 90 Real Tools (30 per category)
+        // Data Configuration: Tool catalog grouped by category
         const toolsData = {
             video: [
                 { name: "Adobe Premiere Pro", desc: "Industry-standard pro video editing software.", url: "https://www.adobe.com/products/premiere.html" },
@@ -292,6 +292,7 @@
                 { name: "DesignCap", desc: "Make online graphic design simple.", url: "https://www.designcap.com/" }
             ],
             ai: [
+                { name: "agent-qa", desc: "Open source web, Android and iOS QA with memidex persistent memory, reviewable self-improvement and run evidence (FSL-1.1-ALv2). Model and infrastructure costs are separate.", url: "https://vostride.com" },
                 { name: "ChatGPT", desc: "Advanced conversational AI by OpenAI.", url: "https://chat.openai.com/" },
                 { name: "Google Gemini", desc: "Multimodal AI assistant by Google.", url: "https://gemini.google.com/" },
                 { name: "Claude", desc: "Safe, accurate, and secure AI by Anthropic.", url: "https://claude.ai/" },
@@ -351,7 +352,7 @@
                 `).join('');
             };
 
-            // Inject the 90 cards into their respective grids
+            // Inject tool cards into their respective grids
             document.getElementById('grid-video').innerHTML = generateCards(toolsData.video, '#00f0ff');
             document.getElementById('grid-graphic').innerHTML = generateCards(toolsData.graphic, '#7000ff');
             document.getElementById('grid-ai').innerHTML = generateCards(toolsData.ai, '#ffffff');
